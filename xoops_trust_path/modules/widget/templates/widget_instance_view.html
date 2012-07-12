@@ -4,7 +4,7 @@
     <li><a href="<{xoops_cooluri dirname=$dirname dataname=plugin}>"><{$smarty.const._MD_WIDGET_LANG_PLUGIN}><{$smarty.const._LIST}></a> </li>
 </ul>
 
-<h1>[<{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)</h1>
+<h1>[ID: <{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)</h1>
 <div>
 <{xoops_widget dirname=$dirname widget_id=$object->get('instance_id')}>
 </div>

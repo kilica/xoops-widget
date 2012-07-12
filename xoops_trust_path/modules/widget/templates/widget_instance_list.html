@@ -11,7 +11,7 @@
     <thead>
       <tr>
         <th>
-          <{$smarty.const._MD_WIDGET_LANG_INSTANCE_ID}>
+          ID
           <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_INSTANCE_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
           <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_INSTANCE_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
@@ -19,11 +19,6 @@
           <{$smarty.const._MD_WIDGET_LANG_TITLE}>
           <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TITLE}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
           <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TITLE}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
-        </th>
-        <th>
-          <{$smarty.const._MD_WIDGET_LANG_CATEGORY_ID}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_CATEGORY_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_CATEGORY_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
         <th>
           <{$smarty.const._MD_WIDGET_LANG_TYPE}>
@@ -43,7 +38,6 @@
         <tr class="<{cycle values='odd,even'}>">
           <td><{$obj->getShow('instance_id')}></td>
           <td><{$obj->getShow('title')}></td>
-          <td><{assign var=catId value=$obj->getShow('category_id')}><{$mainTitleList.$catId|xoops_escape}></td>
           <td><{$obj->getShow('type')}></td>
           <td><{$obj->getShow('posttime')|xoops_formattimestamp:m}></td>
 
