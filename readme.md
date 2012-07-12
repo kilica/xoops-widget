@@ -36,8 +36,8 @@ You can show widget on template, instead of block.
 Use 'xoops_widget' smarty function.
 
 ex)
-    <{xoops_widget dirname="widget" instance_id=3}>
+`<{xoops_widget dirname="widget" widget_id=3}>`
 
 You can overwrite option value by smarty parameter like below.
-    <{xoops_widget dirname="widget" instance_id=3 p_username="kilica"}>
+`<{xoops_widget dirname="widget" widget_id=3 p_username="kilica"}>`
 In this case, "p_username" option is replaced by "kilica".
