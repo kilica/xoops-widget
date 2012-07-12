@@ -50,8 +50,8 @@ define('_MI_WIDGET_INSTALL_MSG_MODULE_UPDATED', 'モジュール『{0}』をア�
 define('_MI_WIDGET_INSTALL_ERROR_MODULE_UPDATED', 'モジュール『{0}』がアップデートできませんでした。');
 define('_MI_WIDGET_LANG_WIDGET', 'WIDGET');
 define('_MI_WIDGET_DESC_WIDGET', 'WIDGET');
-define('_MI_WIDGET_LANG_AUTHOR', 'モジュール作者');
-define('_MI_WIDGET_LANG_CREDITS', 'クレジット');
+define('_MI_WIDGET_LANG_AUTHOR', '氷川 霧霞');
+define('_MI_WIDGET_LANG_CREDITS', 'http://jp.xoopsdev.com/');
 define('_MI_WIDGET_LANG_CSS_FILE', 'CSS ファイルの URL');
 define('_MI_WIDGET_LANG_ACCESS_CONTROLLER', 'Access Controller Module');
 define('_MI_WIDGET_DESC_ACCESS_CONTROLLER', 'Select the category/group module to manage Edit/View permission.');
