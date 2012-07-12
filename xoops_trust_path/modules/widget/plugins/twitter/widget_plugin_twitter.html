@@ -1,0 +1,29 @@
+<div class="twitter">
+    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+        new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: <{$block->getOptionValue('p_number')}>,
+            interval: 30000,
+            width: <{$block->getOptionValue('p_width')}>,
+            height: <{$block->getOptionValue('p_height')}>,
+            theme: {
+                shell: {
+                    background: '<{$block->getOptionValue('p_shell_background')}>',
+                    color: '<{$block->getOptionValue('p_shell_color')}>'
+                },
+                tweets: {
+                    background: '<{$block->getOptionValue('p_tweets_background')}>',
+                    color: '<{$block->getOptionValue('p_tweets_color')}>',
+                    links: '<{$block->getOptionValue('p_tweets_links')}>'
+                }
+            },
+            features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+            }
+        }).render().setUser('<{$block->getOptionValue('p_username')}>').start();
+    </script></div>

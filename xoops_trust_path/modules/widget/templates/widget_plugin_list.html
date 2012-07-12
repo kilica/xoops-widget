@@ -1,0 +1,30 @@
+<div class="widget">
+<ul class="list-horizontal">
+    <li><a href="<{xoops_cooluri dirname=$dirname}>">TOP</a></li>
+    <li><a href="<{xoops_cooluri dirname=$dirname dataname=plugin}>"><{$smarty.const._MD_WIDGET_LANG_PLUGIN}><{$smarty.const._LIST}></a> </li>
+</ul>
+
+<h1><{$smarty.const._MD_WIDGET_LANG_PLUGIN}><{$smarty.const._LIST}></h1>
+
+<{if count($plugins) > 0}>
+  <table class="outer" summary="">
+    <thead>
+      <tr>
+        <th>
+          <{$smarty.const._MD_WIDGET_LANG_TITLE}>
+        </th>
+      <th>
+          <{$smarty.const._MD_WIDGET_LANG_DESCRIPTION}>
+      </th>
+    </thead>
+    <tbody>
+      <{foreach item=plugin from=$plugins}>
+        <tr class="<{cycle values='odd,even'}>">
+          <td><{$plugin.title}> <a href="<{xoops_cooluri dirname=$dirname dataname=instance action=edit query="type=`$plugin.type`"}>"><{$smarty.const._ADD}></a></td>
+          <td><{$plugin.description}></td>
+        </tr>
+      <{/foreach}>
+    </tbody>
+  </table>
+<{/if}>
+</div>

@@ -1,0 +1,67 @@
+.desc{
+	border:	1px solid #DDDDDD;
+	margin:	10px 20px 10px 20px;
+	padding:	10px;
+}
+
+.clear{
+	clear:	both;
+}
+
+/* horizontal menu */
+ul.hmenu {
+	margin-bottom:40px;
+	margin-left:0px;
+}
+
+.hmenu li {
+	display:	block;
+	float:	left;
+	margin-right:15px;
+}
+
+/* item info */
+.{dirname} .itemInfo dt{
+	float:left;
+	margin-right:5px;
+}
+
+.{dirname} .itemInfo dd{
+	float:left;
+	margin-right:20px;
+}
+
+
+/* 2 column table */
+
+.view dt{
+	clear:both;
+	width:140px;
+	float:left;
+	margin-top:10px;
+}
+
+.view dd{
+	float:left;
+	margin-top:10px;
+}
+
+/* Form */
+
+.edit{
+	
+}
+
+.edit dt{
+	clear:both;
+	width:140px;
+	float:left;
+	margin-top:10px;
+}
+
+.edit dd{
+	float:left;
+	margin-top:10px;
+	width:400px;
+}
+

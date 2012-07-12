@@ -1,0 +1,18 @@
+<div class="widget">
+<ul class="list-horizontal">
+    <li><a href="<{xoops_cooluri dirname=$dirname}>">TOP</a></li>
+    <li><a href="<{xoops_cooluri dirname=$dirname dataname=plugin}>"><{$smarty.const._MD_WIDGET_LANG_PLUGIN}><{$smarty.const._LIST}></a> </li>
+</ul>
+
+<h1>[<{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)</h1>
+<div>
+<{xoops_widget dirname=$dirname widget_id=$object->get('instance_id')}>
+</div>
+<h2><{$smarty.const._MD_WIDGET_LANG_OPTIONS}></h2>
+<dl>
+<{foreach item=field from=$object->mPlugin.options.field}>
+    <dt><{$object->getOptionTitle($field)}></dt>
+    <dd><{$object->getOptionValue($field)}></dd>
+<{/foreach}>
+</dl>
+</div>
