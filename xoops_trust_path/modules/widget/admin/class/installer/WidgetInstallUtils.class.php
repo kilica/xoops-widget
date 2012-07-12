@@ -337,6 +337,16 @@ class Widget_InstallUtils
 		}
 	}
 
+	public static function installWidgetTemplates(&$module, &$log, $defaultOnly = true)
+	{
+		$tplHandler   =& Widget_Utils::getXoopsHandler('tplfile');
+
+		$instances = Legacy_Utils::getModuleHandler('instance', $module->get('dirname'))->getObjects();
+		foreach($instances as $instance){
+			Widget_Utils::installWidgetTemplate($instance);
+		}
+	}
+
 	/**
      * installAllOfBlocks
      * 
