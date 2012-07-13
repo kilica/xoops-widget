@@ -10,7 +10,7 @@ require_once WIDGET_TRUST_PATH.'/class/Plugin.interface.php';
 
 class Widget_Twitter_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 
 		$headerScript = XCube_Root::getSingleton()->mContext->getAttribute('headerScript');

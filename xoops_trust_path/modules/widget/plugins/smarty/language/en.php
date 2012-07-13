@@ -6,4 +6,4 @@
  * Time: 17:03
  * To change this template use File | Settings | File Templates.
  */
-define('_WIDGET_PLUGIN_HTML_CONTENT', 'Contents');
+define('_WIDGET_PLUGIN_SMARTY_CONTENT', 'Contents');

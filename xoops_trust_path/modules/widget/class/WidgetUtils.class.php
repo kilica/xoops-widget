@@ -215,7 +215,6 @@ class Widget_Utils
 	 */
 	public static function installWidgetTemplate($instance)
 	{
-		$type = $instance->mPlugin['type'];
 		$dirname = $instance->getDirname();
 
 		$moduleHandler = xoops_gethandler('module');
@@ -225,6 +224,10 @@ class Widget_Utils
 		$tpldata = file_get_contents($instance->getTemplatePath());
 		if ($tpldata == false){
 			return false;
+		}
+		preg_match_all('/\[\[(.*)\]\]/', $tpldata, $matches);
+		foreach($matches[1] as $field){
+			$tpldata = str_replace('[['.$field.']]', $instance->getOptionValue($field), $tpldata);
 		}
 		//
 		// Create template file object, then store it.

@@ -78,10 +78,15 @@ class Widget_InstanceObject extends Legacy_AbstractObject
 		}
 		else{
 			//load and unserialize options
-			$this->mOptions = unserialize($this->get('options'));
+			$this->mOptions = $this->loadOptionValues();
 		}
 
 		$this->_mPluginLoaded = true;
+	}
+
+	public function loadOptionValues()
+	{
+		$this->mOptions = unserialize($this->get('options'));
 	}
 
 	public function getOptionValue($key)
