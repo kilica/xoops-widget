@@ -24,7 +24,7 @@ function smarty_function_xoops_widget($params, &$smarty)
 		}
 	}
 	$pluginFile = WIDGET_TRUST_PATH.'/plugins/'.$widget->getShow('type').'/plugin.php';
-	if(file_exists($pluginFile)){
+	if(file_exists($pluginFile) && $widget instanceof Widget_InstanceObject){
 		require_once $pluginFile;
 		call_user_func(array('Widget_'.ucfirst($widget->getShow('type')).'_Plugin', 'execute'), $widget);
 	}
