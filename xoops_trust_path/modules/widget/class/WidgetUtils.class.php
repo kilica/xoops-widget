@@ -213,12 +213,11 @@ class Widget_Utils
 	 * @note This is not usefull a litte for custom-installers.
 	 * @todo We'll need the way to specify the template by identity or others.
 	 */
-	public static function installWidgetTemplate($instance)
+	public static function installWidgetTemplate(Widget_InstanceObject $instance)
 	{
 		$dirname = $instance->getDirname();
+		$mid = self::_getMid($dirname);
 
-		$moduleHandler = xoops_gethandler('module');
-		$module = $moduleHandler->getByDirname($dirname);
 		$tplHandler =& xoops_gethandler('tplfile');
 
 		$tpldata = file_get_contents($instance->getTemplatePath());
@@ -236,12 +235,12 @@ class Widget_Utils
 			$tplfile = $tplHandler->create();
 		}
 		else{
-			$tplfile = array_shift($tplHandler->find('default', 'widget', $module->get('mid'), null, $instance->getTemplateName()));
+			$tplfile = array_shift($tplHandler->find('default', 'widget', $mid, null, $instance->getTemplateName()));
 			if(! $tplfile){
 				$tplfile = $tplHandler->create();
 			}
 		}
-		$tplfile->setVar('tpl_refid', $module->getVar('mid'));
+		$tplfile->setVar('tpl_refid', $mid);
 		$tplfile->setVar('tpl_lastimported', 0);
 		$tplfile->setVar('tpl_lastmodified', time());
 
@@ -258,26 +257,62 @@ class Widget_Utils
 		return $tplHandler->insert($tplfile);
 	}
 
-	public static function uninstallWidgetTemplates($instance)
+	public static function uninstallWidgetTemplates(Widget_InstanceObject $instance)
 	{
 		$tplHandler =& xoops_gethandler('tplfile');
 		$dirname = $instance->getDirname();
 
-		$moduleHandler = xoops_gethandler('module');
-		$module = $moduleHandler->getByDirname($dirname);
-		$delTemplates =& $tplHandler->find(null, 'widget', $module->get('mid'), null, $instance->getTemplateName());
+		$mid = self::_getMid($dirname);
+		$delTemplates =& $tplHandler->find(null, 'widget', $mid, null, $instance->getTemplateName());
 
 		if (is_array($delTemplates) && count($delTemplates) > 0) {
 			//
 			// clear cache
 			//
 			$xoopsTpl =new XoopsTpl();
-			$xoopsTpl->clear_cache(null, "mod_" . $module->get('dirname'));
+			$xoopsTpl->clear_cache(null, "mod_" . $mid);
 
 			foreach ($delTemplates as $tpl) {
 				$tplHandler->delete($tpl);
 			}
 		}
+	}
+
+	public static function installBlock(Widget_InstanceObject $instance)
+	{
+		$handler = self::getXoopsHandler('block');
+		$mid = self::_getMid($instance->getDirname());
+
+		$blockList = $handler->getByModule($mid);
+		$max = 0;
+		foreach($blockList as $item){
+			$max = ( $item->get('func_num')>$max) ? $item->get('func_num') : $max;
+		}
+
+		$info = array(
+			'func_num'		  => $max+1,
+			'file'			  => 'ViewBlock.class.php',
+			'class'			 => 'ViewBlock',
+			'name'			  => $instance->getShow('title'),
+			'description'	   => $instance->getShow('description'),
+			'options'		   => $instance->get('instance_id'),
+			'template'		  => $instance->getTemplateName(),
+			'show_all_module'   => false,
+			'visible_any'	   => false,
+			'can_clone'			=> true,
+		);
+		$block = $handler->createByInfo($info);
+
+		$block->set('dirname', $instance->getDirname());
+		$block->set('mid', $mid);
+		return $handler->insert($block);
+	}
+
+	protected static function _getMid($dirname)
+	{
+		$moduleHandler = xoops_gethandler('module');
+		$module = $moduleHandler->getByDirname($dirname);
+		return $module->get('mid');
 	}
 }
 

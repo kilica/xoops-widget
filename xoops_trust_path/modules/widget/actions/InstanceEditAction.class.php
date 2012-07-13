@@ -73,7 +73,9 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 		if(parent::_doExecute()){
 			$this->mObject->loadOptionValues();
 			if(Widget_Utils::installWidgetTemplate($this->mObject)){
-				return WIDGET_FRAME_VIEW_SUCCESS;
+				if($this->mObject->isNew() && Widget_Utils::installBlock($this->mObject)){
+					return WIDGET_FRAME_VIEW_SUCCESS;
+				}
 			}
 		}
 		return WIDGET_FRAME_VIEW_ERROR;
