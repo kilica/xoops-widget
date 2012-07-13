@@ -19,6 +19,9 @@ define('_MD_WIDGET_ERROR_PERMISSION', '権限がありません');
 define('_MD_WIDGET_MESSAGE_CONFIRM_DELETE', '以下のデータを本当に削除しますか？');
 define('_MD_WIDGET_LANG_CONTROL', 'CONTROL');
 define('_MD_WIDGET_ERROR_CONTENT_IS_NOT_FOUND', 'CONTENT_IS_NOT_FOUND');
+
+
+define('_MD_WIDGET_LANG_WIDGET', 'ウィジット');
 define('_MD_WIDGET_LANG_INSTANCE_ID', 'Instance id');
 define('_MD_WIDGET_LANG_TITLE', 'ウィジット名');
 define('_MD_WIDGET_LANG_CATEGORY_ID', 'カテゴリ');

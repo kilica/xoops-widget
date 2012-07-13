@@ -19,6 +19,8 @@ define('_MD_WIDGET_ERROR_PERMISSION', 'You don\'t have permission');
 define('_MD_WIDGET_MESSAGE_CONFIRM_DELETE', 'Are you sure to delete?');
 define('_MD_WIDGET_LANG_CONTROL', 'CONTROL');
 define('_MD_WIDGET_ERROR_CONTENT_IS_NOT_FOUND', 'Content is not found');
+
+define('_MD_WIDGET_LANG_WIDGET', 'WIDGET');
 define('_MD_WIDGET_LANG_INSTANCE_ID', 'Instance id');
 define('_MD_WIDGET_LANG_TITLE', 'Title');
 define('_MD_WIDGET_LANG_CATEGORY_ID', 'Category id');
