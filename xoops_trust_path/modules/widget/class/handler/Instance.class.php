@@ -105,7 +105,7 @@ class Widget_InstanceObject extends Legacy_AbstractObject
 	public function getTemplateName($isOriginal=false)
 	{
 		if($isOriginal===true){
-			return $this->getDirname().'_plugin_'.$this->getShow('type').'.html';
+			return 'plugin.html';
 		}
 		else{
 			if($this->get('template')){
