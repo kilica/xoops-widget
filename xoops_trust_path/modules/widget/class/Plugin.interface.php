@@ -9,4 +9,6 @@
 interface Widget_PluginInterface
 {
 	public static function execute(Widget_InstanceObject &$object);
+
+	public static function fetch(Widget_InstanceObject &$object, $request);
 }

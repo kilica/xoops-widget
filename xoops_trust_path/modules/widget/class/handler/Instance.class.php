@@ -94,6 +94,11 @@ class Widget_InstanceObject extends Legacy_AbstractObject
 		return $this->mOptions[$key];
 	}
 
+	public function setOptionValue($key, $value)
+	{
+		return $this->mOptions[$key] = $value;
+	}
+
 	public function getOptionTitle($key)
 	{
 		if(substr($key, 0, strlen(WIDGET_PREFIX))==WIDGET_PREFIX){

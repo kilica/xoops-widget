@@ -19,6 +19,8 @@ define('WIDGET_PREFIX', 'p_');
 
 require_once WIDGET_TRUST_PATH . '/class/WidgetUtils.class.php';
 require_once WIDGET_TRUST_PATH . '/class/Enum.class.php';
+require_once WIDGET_TRUST_PATH . '/class/Plugin.interface.php';
+
 /**
  * Widget_AssetPreloadBase
 **/

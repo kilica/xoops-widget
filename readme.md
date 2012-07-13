@@ -12,9 +12,10 @@ XOOPS Cube Legacy 2.2 or later
 
 Included Plugins
 ----------------
-* html
+* HTML
 * Google Maps
 * Twitter
+* Smarty
 
 Terms of this module
 --------------------
@@ -41,3 +42,11 @@ ex)
 You can overwrite option value by smarty parameter like below.
 `<{xoops_widget dirname="widget" widget_id=3 p_username="kilica"}>`
 In this case, "p_username" option is replaced by "kilica".
+
+History
+-------
+2012-07-13 0.20
+Add Smarty plugin
+
+2012-07-12 0.10
+First Release
