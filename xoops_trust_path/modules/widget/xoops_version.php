@@ -132,25 +132,6 @@ $modversion['config'] = array(
 */
 
 	array(
-		'name'			=> 'access_controller',
-		'title' 		=> '_MI_WIDGET_LANG_ACCESS_CONTROLLER',
-		'description'	=> '_MI_WIDGET_DESC_ACCESS_CONTROLLER',
-		'formtype'		=> 'server_module',
-		'valuetype' 	=> 'text',
-		'default'		=> '',
-		'options'		=> array('none', 'cat', 'group')
-	),
-	array(
-		'name'			=> 'auth_type' ,
-		'title' 		=> "_MI_WIDGET_LANG_AUTH_TYPE" ,
-		'description'	=> "_MI_WIDGET_DESC_AUTH_TYPE" ,
-		'formtype'		=> 'textbox' ,
-		'valuetype' 	=> 'text' ,
-		'default'		=> 'viewer|poster|manager' ,
-		'options'		=> array()
-	) ,
-
-	array(
 		'name'		  => 'css_file' ,
 		'title'		 => "_MI_WIDGET_LANG_CSS_FILE" ,
 		'description'   => "_MI_WIDGET_DESC_CSS_FILE" ,

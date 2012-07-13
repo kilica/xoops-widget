@@ -19,20 +19,6 @@ class Widget_InstanceDeleteAction extends Widget_AbstractDeleteAction
 {
 	const DATANAME = 'instance';
 
-
-	/**
-	 * _getCatId
-	 * 
-	 * @param	void
-	 * 
-	 * @return	int
-	**/
-	protected function _getCatId()
-	{
-		return $this->mObject->get('category_id');
-	}
-
-
 	/**
 	 * prepare
 	 * 

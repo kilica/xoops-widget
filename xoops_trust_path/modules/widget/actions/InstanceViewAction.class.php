@@ -19,19 +19,6 @@ class Widget_InstanceViewAction extends Widget_AbstractViewAction
 {
 	const DATANAME = 'instance';
 
-
-	/**
-	 * _getCatId
-	 * 
-	 * @param	void
-	 * 
-	 * @return	int
-	**/
-	protected function _getCatId()
-	{
-		return $this->mObject->get('category_id');
-	}
-
 	/**
 	 * prepare
 	 * 

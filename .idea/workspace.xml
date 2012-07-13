@@ -22,46 +22,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WidgetUtils.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/WidgetUtils.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="23" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.40983605">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InstanceEditAction.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceEditAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-17.965517">
+            <state line="75" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-13.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="option_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/option_form.html">
+      <file leaf-file-name="ViewBlock.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/blocks/ViewBlock.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="266" selection-end="266" vertical-scroll-proportion="-2.0689654">
+            <state line="50" column="0" selection-start="721" selection-end="721" vertical-scroll-proportion="-7.2083335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.ini" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/config.ini">
+      <file leaf-file-name="WidgetUtils.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/WidgetUtils.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="15" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
+            <state line="116" column="30" selection-start="3407" selection-end="3407" vertical-scroll-proportion="0.6485261">
               <folding />
             </state>
           </provider>
@@ -77,14 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_view.html" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_list.html" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/blocks/ViewBlock.class.php" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/config.ini" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/gmap/plugin.php" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/html/plugin.php" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/twitter/plugin.php" />
-        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/class/Plugin.interface.php" />
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/widget_plugin_smarty.html" />
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/plugin.php" />
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/language/en.php" />
@@ -93,14 +67,23 @@
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/class/handler/Instance.class.php" />
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceEditAction.class.php" />
         <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/class/WidgetUtils.class.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/libs/smarty/plugins/function.xoops_widget.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/blocks/ViewBlock.class.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/xoops_version.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_edit.html" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_delete.html" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/preload/AssetPreload.class.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceDeleteAction.class.php" />
+        <option value="$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceViewAction.class.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="40" />
+    <option name="x" value="53" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="950" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -128,16 +111,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,22 +433,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-  </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="a8a7a241-4b44-4ff9-af31-84f575de2e21">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -489,6 +461,13 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -497,13 +476,6 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
     </configuration>
     <list size="0" />
   </component>
@@ -523,7 +495,6 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">C:\Users\ICHIKAWA\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
@@ -537,15 +508,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="40" width="1280" height="950" extended-state="0" />
-    <editor active="true" />
+    <frame x="53" y="22" width="1280" height="878" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35006604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26311475" sideWeight="0.55979645" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27786887" sideWeight="0.7811705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2828201" sideWeight="0.64993393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -554,7 +526,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21882951" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -615,114 +586,106 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/html/plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="65" selection-start="350" selection-end="350" vertical-scroll-proportion="0.32786885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/gmap/plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="320" selection-end="341" vertical-scroll-proportion="0.32786885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/twitter/plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="72" selection-start="425" selection-end="425" vertical-scroll-proportion="0.40983605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/Plugin.interface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="58" selection-start="254" selection-end="254" vertical-scroll-proportion="0.28089887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.39325842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/twitter/option_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="113" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.505618">
-          <folding />
-        </state>
+        <state line="14" column="113" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.505618" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/widget_plugin_smarty.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="0.027322404">
-          <folding />
-        </state>
+        <state line="1" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="0.027322404" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/language/en.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923">
-          <folding />
-        </state>
+        <state line="8" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/language/ja_utf8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923">
+        <state line="8" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21857923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/handler/Instance.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="40" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.1202186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/option_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/libs/smarty/plugins/function.xoops_widget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="387" selection-end="387" vertical-scroll-proportion="0.16530055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/blocks/ViewBlock.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="105" selection-start="3055" selection-end="3055" vertical-scroll-proportion="0.57377046">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/plugins/smarty/option_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="266" selection-end="266" vertical-scroll-proportion="-2.0689654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/handler/Instance.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="40" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.1202186">
+        <state line="13" column="37" selection-start="325" selection-end="325" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceEditAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-17.965517">
+        <state line="75" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-13.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/xoops_version.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.17005545">
+          <folding>
+            <element signature="e#6#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/blocks/ViewBlock.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="721" selection-end="721" vertical-scroll-proportion="-7.2083335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.39306358">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/templates/widget_instance_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.34874758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/preload/AssetPreload.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="42" selection-start="1997" selection-end="1997" vertical-scroll-proportion="-0.5397412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceViewAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.06443914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/actions/InstanceDeleteAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.07936508">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xoops_trust_path/modules/widget/class/WidgetUtils.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="23" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.40983605">
+        <state line="116" column="30" selection-start="3407" selection-end="3407" vertical-scroll-proportion="0.6485261">
           <folding />
         </state>
       </provider>

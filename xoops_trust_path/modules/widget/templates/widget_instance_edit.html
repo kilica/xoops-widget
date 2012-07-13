@@ -21,16 +21,7 @@
     <label for="title" class="control-label required"><{$smarty.const._MD_WIDGET_LANG_TITLE}></label>
     <div class="controls"><{xoops_input type=text name=title value=$actionForm->get('title') class="span4" maxlength=255required}></div>
   </div>
-  <{if $accessController->getAccessControllerType()!='none'}>
-  <div class="control-group">
-    <label for="category_id" class="control-label required"><{$smarty.const._MD_WIDGET_LANG_CATEGORY_ID}></label>
-    <div class="controls"><select name="category_id">
-      <{legacy_category_select tree=$accessController->getTree('post') selectedValue=$actionForm->get('category_id')}>
-    </select></div>
-  </div>
-  <{else}>
   <{xoops_input type="hidden" name="category_id" value="0"}>
-  <{/if}>
   <{include file=$optionFormPath}>
   <div class="control-group">
     <label for="template" class="control-label"><{$smarty.const._MD_WIDGET_LANG_TEMPLATE}></label>

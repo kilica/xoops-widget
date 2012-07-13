@@ -48,10 +48,6 @@ class Widget_ViewBlock extends Legacy_BlockProcedure
     function prepare()
     {
         $ret =  parent::prepare() && $this->_parseOptions() && $this->_setupObject();
-		$accessController = Widget_Utils::getAccessControllerObject($this->_mBlock->get('dirname'), 'instance');
-		if($this->_mObject && $accessController->check($this->_mObject->get('category_id'), 'viewer')===false){
-			return;
-		}
 		return $ret;
     }
     

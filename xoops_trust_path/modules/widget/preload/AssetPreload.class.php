@@ -72,13 +72,7 @@ class Widget_AssetPreloadBase extends XCube_ActionFilter
         $this->mRoot->mDelegateManager->add('Legacy_Utils.CreateModule','Widget_AssetPreloadBase::getModule');
         $this->mRoot->mDelegateManager->add('Legacy_Utils.CreateBlockProcedure','Widget_AssetPreloadBase::getBlock');
         $this->mRoot->mDelegateManager->add('Module.'.$this->mDirname.'.Global.Event.GetNormalUri','Widget_CoolUriDelegate::getNormalUri', $file);
-
-        $this->mRoot->mDelegateManager->add('Legacy_CategoryClient.GetClientList','Widget_CatClientDelegate::getClientList', WIDGET_TRUST_PATH.'/class/callback/AccessClient.class.php');
-        $this->mRoot->mDelegateManager->add('Legacy_CategoryClient.'.$this->mDirname.'.GetClientData','Widget_CatClientDelegate::getClientData', WIDGET_TRUST_PATH.'/class/callback/AccessClient.class.php');
-        //Group Client
-        $this->mRoot->mDelegateManager->add('Legacy_GroupClient.GetClientList','Widget_GroupClientDelegate::getClientList', WIDGET_TRUST_PATH.'/class/callback/AccessClient.class.php');
-        $this->mRoot->mDelegateManager->add('Legacy_GroupClient.'.$this->mDirname.'.GetClientData','Widget_GroupClientDelegate::getClientData', WIDGET_TRUST_PATH.'/class/callback/AccessClient.class.php');
-        $this->mRoot->mDelegateManager->add('Legacy_GroupClient.GetActionList','Widget_GroupClientDelegate::getActionList', WIDGET_TRUST_PATH.'/class/callback/AccessClient.class.php');  }
+	}
 
     /**
      * getInstance
