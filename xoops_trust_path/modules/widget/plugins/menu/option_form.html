@@ -2,3 +2,7 @@
     <label for="p_menu" class="control-label required"><{$object->getOptionTitle('p_menu')}></label>
     <div class="controls" class="span4"><textarea name="p_menu"><{$object->getOptionValue('p_menu')}></textarea></div>
 </div>
+<div class="control-group">
+  <label for="p_topclass" class="control-label"><{$object->getOptionTitle('p_topclass')}></label>
+  <div class="controls" class="span4"><{xoops_input type="text" name="p_topclass" value=$object->getOptionValue('p_topclass')}></div>
+</div>

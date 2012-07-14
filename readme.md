@@ -14,6 +14,7 @@ Included Plugins
 ----------------
 * HTML
 * Google Maps
+* Menu
 * Twitter
 * Smarty
 

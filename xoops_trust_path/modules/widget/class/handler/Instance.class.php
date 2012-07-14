@@ -78,7 +78,7 @@ class Widget_InstanceObject extends Legacy_AbstractObject
 		}
 		else{
 			//load and unserialize options
-			$this->mOptions = $this->loadOptionValues();
+			$this->loadOptionValues();
 		}
 
 		$this->_mPluginLoaded = true;

@@ -16,7 +16,8 @@ class Widget_Menu_Plugin implements Widget_PluginInterface
 	public static function fetch(Widget_InstanceObject &$object, $request)
 	{
 		$menuList = explode("\n", $request->getRequest('p_menu'));
-		$ret = '<ul>%s</ul>';
+		$topclass = $request->getRequest('p_topclass');
+		$ret = '<ul class="'.$topclass.'">%s</ul>';
 		$depth = 1;
 		$htmlMenu = '';
 		foreach($menuList as $menu){

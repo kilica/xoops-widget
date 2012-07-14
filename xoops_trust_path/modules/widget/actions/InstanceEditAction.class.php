@@ -64,8 +64,6 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 		$render->setAttribute('dirname', $this->mAsset->mDirname);
 		$render->setAttribute('dataname', self::DATANAME);
 		$render->setAttribute('optionFormPath', WIDGET_TRUST_PATH.'/plugins/'.$this->mObject->get('type').'/option_form.html');
-
-		$render->setAttribute('accessController',$this->mAccessController['main']);
 	}
 
 	public function _doExecute()
@@ -73,7 +71,7 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 		if(parent::_doExecute()){
 			$this->mObject->loadOptionValues();
 			if(Widget_Utils::installWidgetTemplate($this->mObject)){
-				if($this->mObject->isNew() && Widget_Utils::installBlock($this->mObject)){
+				if(! $this->mObject->isNew() || Widget_Utils::installBlock($this->mObject)){
 					return WIDGET_FRAME_VIEW_SUCCESS;
 				}
 			}
