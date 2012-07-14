@@ -91,7 +91,7 @@ abstract class Widget_AbstractDeleteAction extends Widget_AbstractEditAction
     **/
     public function executeViewSuccess(/*** XCube_RenderTarget ***/ &$render)
     {
-        $this->mRoot->mController->executeForward($this->_getNextUri($this->_getConst('DATANAME'), 'list'));
+        $this->mRoot->mController->executeForward(Legacy_Utils::renderUri($this->mAsset->mDirname));
     }
 }
 
