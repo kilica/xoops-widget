@@ -12,6 +12,7 @@ XOOPS Cube Legacy 2.2 or later
 
 Included Plugins
 ----------------
+* ATND
 * HTML
 * Google Maps
 * Menu
@@ -46,6 +47,16 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-08-29 0.23
+Add ATND plugin
+
+2012-08-29 0.22
+Expand Twitter plugin for search, faves, list
+Add prepareEditform() method for plugin
+
+2012-07-14 0.21
+Add Menu plugin
+
 2012-07-13 0.20
 Add Smarty plugin
 

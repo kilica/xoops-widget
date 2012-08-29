@@ -1,0 +1,9 @@
+<div class="atnd">
+<{if count($block) > 0}>
+<ul>
+    <{foreach item=obj from=$block->mEvents}>
+    <li><{$obj->getShow('started_at')|strtotime|xoops_formattimestamp:"s"}> <a href="<{$obj->getShow('event_url')}>"><{$obj->getShow('title')}></a></li>
+    <{/foreach}>
+</ul>
+<{/if}>
+</div>
