@@ -1,0 +1,7 @@
+<p class="alert alert-warning">
+    <{$smarty.const._WIDGET_PLUGIN_AMAZON_REQUIRED_SETTINGS}>
+</p>
+<div class="control-group">
+    <label for="p_asin" class="control-label required"><{$object->getOptionTitle('p_asin')}></label>
+    <div class="controls"><{xoops_input type=text name=p_asin value=$object->getOptionValue('p_asin')}></div>
+</div>

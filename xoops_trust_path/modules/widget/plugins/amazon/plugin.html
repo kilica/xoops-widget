@@ -1,0 +1,13 @@
+<div class="amazon">
+<{if count($block->mItem) > 0}>
+<ul class="thumbnails">
+    <li class="span2">
+    <div class="thumbnail">
+        <a href="<{$block->mItem->DetailPageURL}>"><img src="<{$block->mItem->MediumImage->URL}>" width="<{$block->mItem->MediumImage->Width}>" height="<{$block->mItem->MediumImage->Height}>" /></a>
+        <p><a href="<{$block->mItem->DetailPageURL}>"><{$block->mItem->ItemAttributes->Title}></a></p>
+        <p><{$block->mItem->ItemAttributes->ListPrice->FormattedPrice}></p>
+    </div>
+    </li>
+</ul>
+<{/if}>
+</div>

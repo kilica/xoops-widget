@@ -10,6 +10,11 @@ Requirement
 XOOPS Cube Legacy 2.2 or later
 
 
+Template
+--------
+This module's template based on Bootstrap, from Twitter.
+I recommend to use theme of Bootstrap based.
+
 Included Plugins
 ----------------
 * ATND
@@ -47,6 +52,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-08-29 0.24
+Add Amazon plugin
+
 2012-08-29 0.23
 Add ATND plugin
 
