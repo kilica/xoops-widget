@@ -1,6 +1,33 @@
 <div class="control-group">
-    <label for="p_username" class="control-label required"><{$object->getOptionTitle('p_username')}></label>
-    <div class="controls"><{xoops_input type=text name=p_username value=$object->getOptionValue('p_username')}></div>
+    <label for="p_type" class="control-label required"><{$object->getOptionTitle('p_type')}></label>
+    <div class="controls">
+      <select name="p_type" id="p_type">
+          <option value="profile"<{if $object->getOptionValue('p_type')=='profile'}> selected="selected"<{/if}>><{$smarty.const._WIDGET_PLUGIN_TWITTER_TYPE_PROFILE}></option>
+          <option value="search"<{if $object->getOptionValue('p_type')=='search'}> selected="selected"<{/if}>><{$smarty.const._WIDGET_PLUGIN_TWITTER_TYPE_SEARCH}></option>
+          <option value="faves"<{if $object->getOptionvalue('p_type')=='faves'}> selected="selected"<{/if}>><{$smarty.const._WIDGET_PLUGIN_TWITTER_TYPE_FAVES}></option>
+          <option value="list"<{if $object->getOptionValue('p_type')=='list'}> selected="selected"<{/if}>><{$smarty.const._WIDGET_PLUGIN_TWITTER_TYPE_LIST}></option>
+      </select>
+    </div>
+</div>
+<div class="control-group profile faves list">
+    <label for="p_username" class="control-label"><{$object->getOptionTitle('p_username')}></label>
+    <div class="controls"><{xoops_input type=text name=p_username value=$object->getOptionValue('p_username') disabled="disabled"}></div>
+</div>
+<div class="control-group list">
+    <label for="p_listname" class="control-label"><{$object->getOptionTitle('p_listname')}></label>
+    <div class="controls"><{xoops_input type=text name=p_listname value=$object->getOptionValue('p_listname') disabled="disabled"}></div>
+</div>
+<div class="control-group search faves list">
+    <label for="p_title" class="control-label"><{$object->getOptionTitle('p_title')}></label>
+    <div class="controls"><{xoops_input type=text name=p_title value=$object->getOptionValue('p_title') disabled="disabled"}></div>
+</div>
+<div class="control-group search faves list">
+    <label for="p_subject" class="control-label"><{$object->getOptionTitle('p_subject')}></label>
+    <div class="controls"><{xoops_input type=text name=p_subject value=$object->getOptionValue('p_subject') disabled="disabled"}></div>
+</div>
+<div class="control-group search">
+    <label for="p_keyword" class="control-label required"><{$object->getOptionTitle('p_keyword')}></label>
+    <div class="controls"><{xoops_input type=text name=p_keyword value=$object->getOptionValue('p_keyword') disabled="disabled"}></div>
 </div>
 <div class="control-group">
     <label for="p_number" class="control-label required"><{$object->getOptionTitle('p_number')}></label>

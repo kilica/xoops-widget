@@ -129,7 +129,8 @@ class Widget_InstanceObject extends Legacy_AbstractObject
 
 	public function getImageNumber()
 	{
-		return 0;
+		$class = sprintf("Widget_%s_Plugin", ucfirst($this->get('type')));
+		return $class::getImageNumber($this);
 	}
 
 }

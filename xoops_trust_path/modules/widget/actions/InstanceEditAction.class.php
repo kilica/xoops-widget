@@ -58,6 +58,12 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 	**/
 	public function executeViewInput(/*** XCube_RenderTarget ***/ &$render)
 	{
+		$pluginFile = WIDGET_TRUST_PATH.'/plugins/'.$this->mObject->getShow('type').'/plugin.php';
+		if(file_exists($pluginFile) && $this->mObject instanceof Widget_InstanceObject){
+			require_once $pluginFile;
+			call_user_func(array('Widget_'.ucfirst($this->mObject->getShow('type')).'_Plugin', 'prepareEditform'), $this->mObject);
+		}
+
 		$render->setTemplateName($this->mAsset->mDirname . '_instance_edit.html');
 		$render->setAttribute('actionForm', $this->mActionForm);
 		$render->setAttribute('object', $this->mObject);

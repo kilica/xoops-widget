@@ -9,11 +9,15 @@
 
 class Widget_Menu_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject &$object)
+	public static function execute(Widget_InstanceObject $object)
 	{
 	}
 
-	public static function fetch(Widget_InstanceObject &$object, $request)
+	public static function prepareEditform(Widget_InstanceObject $object)
+	{
+	}
+
+	public static function fetch(Widget_InstanceObject $object, $request)
 	{
 		$menuList = explode("\n", $request->getRequest('p_menu'));
 		$topclass = $request->getRequest('p_topclass');
@@ -62,6 +66,11 @@ class Widget_Menu_Plugin implements Widget_PluginInterface
 			$htmlMenu .='</ul>';
 		}
 		$object->setOptionValue('p_htmlmenu', sprintf($ret, $htmlMenu));
+	}
+
+	public static function getImageNumber(Widget_InstanceObject $obj)
+	{
+		return 0;
 	}
 
 }

@@ -12,23 +12,15 @@
       <tr>
         <th>
           ID
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_INSTANCE_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_INSTANCE_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
         <th>
           <{$smarty.const._MD_WIDGET_LANG_TITLE}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TITLE}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TITLE}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
         <th>
           <{$smarty.const._MD_WIDGET_LANG_TYPE}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TYPE}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_TYPE}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
         <th>
           <{$smarty.const._MD_WIDGET_LANG_POSTTIME}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_POSTTIME}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.WIDGET_INSTANCE_SORT_KEY_POSTTIME}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
         </th>
         <th><{$smarty.const._MD_WIDGET_LANG_CONTROL}></th>
       </tr>
@@ -37,12 +29,11 @@
       <{foreach item=obj from=$objects}>
         <tr class="<{cycle values='odd,even'}>">
           <td><{$obj->getShow('instance_id')}></td>
-          <td><{$obj->getShow('title')}></td>
+          <td><a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=view}>"><{$obj->getShow('title')}></a></td>
           <td><{$obj->getShow('type')}></td>
           <td><{$obj->getShow('posttime')|xoops_formattimestamp:m}></td>
 
           <td>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=view}>"><{$smarty.const._VIEW}></a>
             <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=edit}>"><{$smarty.const._EDIT}></a>
             <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=delete}>"><{$smarty.const._DELETE}></a>
           </td>

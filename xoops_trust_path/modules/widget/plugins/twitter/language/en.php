@@ -6,6 +6,11 @@
  * Time: 17:03
  * To change this template use File | Settings | File Templates.
  */
+define('_WIDGET_PLUGIN_TWITTER_TYPE', 'Widget Type');
+define('_WIDGET_PLUGIN_TWITTER_TITLE', 'Title');
+define('_WIDGET_PLUGIN_TWITTER_SUBJECT', 'Subject');
+define('_WIDGET_PLUGIN_TWITTER_KEYWORD', 'Search Keyword');
+define('_WIDGET_PLUGIN_TWITTER_LISTNAME', 'List Name');
 define('_WIDGET_PLUGIN_TWITTER_USERNAME', 'Twitter User name');
 define('_WIDGET_PLUGIN_TWITTER_NUMBER', 'Number of Display');
 define('_WIDGET_PLUGIN_TWITTER_WIDTH', 'Width');

@@ -112,7 +112,7 @@ $this->mFieldProperties['category_id']->addMessage('required', _MD_WIDGET_ERROR_
 		$pluginFile = WIDGET_TRUST_PATH.'/plugins/'.$obj->getShow('type').'/plugin.php';
 		if(file_exists($pluginFile)){
 			require_once $pluginFile;
-			call_user_func(array('Widget_'.ucfirst($obj->get('type')).'_Plugin', 'fetch'), &$obj, $req);
+			call_user_func(array('Widget_'.ucfirst($obj->get('type')).'_Plugin', 'fetch'), $obj, $req);
 		}
 		$obj->set('options', serialize($obj->mOptions));
 	}

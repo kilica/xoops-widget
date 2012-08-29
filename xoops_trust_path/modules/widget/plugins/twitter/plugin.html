@@ -1,29 +1,38 @@
+<{assign var=type value=$block->getOptionValue('p_type')}>
 <div class="twitter">
     <script>
         new TWTR.Widget({
             version: 2,
-            type: 'profile',
+            type: "<{$type}>",
+<{if $type=='search' || $type=='faves' || $type=='list'}>            title: "<{$block->getOptionValue('p_title')}>",
+<{/if}>
+<{if $type=='search' || $type=='faves' || $type=='list'}>            subject: "<{$block->getOptionValue('p_subject')}>",
+<{/if}>
+<{if $type=='search'}>            search: "<{$block->getOptionValue('p_keyword')}>",
+<{/if}>
             rpp: <{$block->getOptionValue('p_number')}>,
             interval: 30000,
             width: <{$block->getOptionValue('p_width')}>,
             height: <{$block->getOptionValue('p_height')}>,
             theme: {
                 shell: {
-                    background: '<{$block->getOptionValue('p_shell_background')}>',
-                    color: '<{$block->getOptionValue('p_shell_color')}>'
+                    background: "<{$block->getOptionValue('p_shell_background')}>",
+                    color: "<{$block->getOptionValue('p_shell_color')}>"
                 },
                 tweets: {
-                    background: '<{$block->getOptionValue('p_tweets_background')}>',
-                    color: '<{$block->getOptionValue('p_tweets_color')}>',
-                    links: '<{$block->getOptionValue('p_tweets_links')}>'
+                    background: "<{$block->getOptionValue('p_tweets_background')}>",
+                    color: "<{$block->getOptionValue('p_tweets_color')}>",
+                    links: "<{$block->getOptionValue('p_tweets_links')}>"
                 }
             },
             features: {
                 scrollbar: false,
                 loop: false,
                 live: false,
-                behavior: 'all'
+                behavior: "all"
             }
-        }).render().setUser('<{$block->getOptionValue('p_username')}>').start();
+<{if $type=='profile' || $type=='faves'}>        }).render().setUser('<{$block->getOptionValue('p_username')}>').start();<{/if}>
+<{if $type=='search'}>        }).render().start();<{/if}>
+<{if $type=='list'}>        }).render().setList('<{$block->getOptionValue('p_username')}>', '<{$block->getOptionValue('p_listname')}>').start();<{/if}>
     </script>
 </div>
