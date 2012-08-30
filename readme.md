@@ -52,6 +52,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-08-30 0.25
+Fix Bug: Load Plugin timing in block show
+
 2012-08-29 0.24
 Add Amazon plugin
 
