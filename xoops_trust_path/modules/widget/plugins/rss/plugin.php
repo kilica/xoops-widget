@@ -11,7 +11,7 @@ class Widget_Rss_Plugin implements Widget_PluginInterface
 {
 	public static function execute(Widget_InstanceObject $object)
 	{
-		include_once WIDGET_TRUST_PATH.'/vendor/simplepie/autoloader.php';
+		include_once XOOPS_LIBRARY_PATH.'/simplepie/autoloader.php';
 		$feed = new SimplePie();
 		$feed->set_feed_url($object->getOptionValue('p_feed_url'));
 		$feed->set_item_limit($object->getOptionValue('p_number'));
