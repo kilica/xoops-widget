@@ -292,7 +292,7 @@ class Widget_Utils
 		$info = array(
 			'func_num'		  => $max+1,
 			'file'			  => 'ViewBlock.class.php',
-			'class'			 => 'ViewBlock',
+			'show_func'			 => 'cl::ViewBlock',
 			'name'			  => $instance->getShow('title'),
 			'description'	   => $instance->getShow('description'),
 			'options'		   => $instance->get('instance_id'),
@@ -302,7 +302,7 @@ class Widget_Utils
 			'can_clone'			=> true,
 		);
 		$block = $handler->createByInfo($info);
-
+		$block->set('func_num', $max+1);
 		$block->set('dirname', $instance->getDirname());
 		$block->set('mid', $mid);
 		return $handler->insert($block);
