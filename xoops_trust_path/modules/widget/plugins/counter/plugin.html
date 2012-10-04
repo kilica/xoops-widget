@@ -1,0 +1,7 @@
+<div class="counter">
+<{if $block->getOptionValue('p_perpage')==0}>
+  <{$block->getOptionValue('p_counter')}>
+<{else}>
+  <{$block->mPageCounter}>
+<{/if}>
+</div>

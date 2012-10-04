@@ -1,0 +1,12 @@
+<div class="control-group">
+    <label for="p_perpage"><{$object->getOptionTitle('p_perpage')}></label>
+    <div class="controls">
+      <div><input type=radio name=p_perpage value=1<{if $object->getOptionValue('p_perpage')==1}> checked="checked"<{/if}>><{$smarty.const._WIDGET_PLUGIN_COUNTER_PERPAGE_YES}></div>
+      <div></div><input type=radio name=p_perpage value=0<{if $object->getOptionValue('p_perpage')==0}> checked="checked"<{/if}>><{$smarty.const._WIDGET_PLUGIN_COUNTER_PERPAGE_NO}></div>
+    </div>
+</div>
+<div class="control-group profile faves list">
+    <label for="p_counter" class="control-label required"><{$object->getOptionTitle('p_counter')}></label>
+    <div class="controls"><{xoops_input type=text name=p_counter value=$object->getOptionValue('p_counter')}><br />
+    <{$smarty.const._WIDGET_PLUGIN_COUNTER_COUNTER_DESC}></div>
+</div>
