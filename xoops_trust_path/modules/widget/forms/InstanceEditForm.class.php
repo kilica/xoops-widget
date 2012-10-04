@@ -114,7 +114,7 @@ $this->mFieldProperties['category_id']->addMessage('required', _MD_WIDGET_ERROR_
 			require_once $pluginFile;
 			call_user_func(array('Widget_'.ucfirst($obj->get('type')).'_Plugin', 'fetch'), $obj, $req);
 		}
-		$obj->set('options', serialize($obj->mOptions));
+		//$obj->set('options', serialize($obj->mOptions));
 	}
 
 	/**
