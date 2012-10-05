@@ -24,6 +24,8 @@ Included Plugins
 * Menu
 * Twitter
 * Smarty
+* RSS
+* Counter
 
 Terms of this module
 --------------------
