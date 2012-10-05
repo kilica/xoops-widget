@@ -17,6 +17,7 @@ I recommend to use theme of Bootstrap based.
 
 Included Plugins
 ----------------
+* Amazon
 * ATND
 * HTML
 * Google Maps
@@ -52,24 +53,28 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-10-05 0.26
+* Add Counter Plugin
+* Add RSS Plugin
+
 2012-08-30 0.25
-Fix Bug: Load Plugin timing in block show
+* Fix Bug: Load Plugin timing in block show
 
 2012-08-29 0.24
-Add Amazon plugin
+* Add Amazon plugin
 
 2012-08-29 0.23
-Add ATND plugin
+* Add ATND plugin
 
 2012-08-29 0.22
-Expand Twitter plugin for search, faves, list
-Add prepareEditform() method for plugin
+* Expand Twitter plugin for search, faves, list
+* Add prepareEditform() method for plugin
 
 2012-07-14 0.21
-Add Menu plugin
+* Add Menu plugin
 
 2012-07-13 0.20
-Add Smarty plugin
+* Add Smarty plugin
 
 2012-07-12 0.10
-First Release
+* First Release
