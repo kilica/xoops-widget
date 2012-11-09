@@ -21,7 +21,7 @@ require_once WIDGET_TRUST_PATH . '/class/WidgetUtils.class.php';
 // Define a basic manifesto.
 //
 $modversion['name'] = $myDirName;
-$modversion['version'] = 0.26;
+$modversion['version'] = 0.30;
 $modversion['description'] = _MI_WIDGET_DESC_WIDGET;
 $modversion['author'] = _MI_WIDGET_LANG_AUTHOR;
 $modversion['credits'] = _MI_WIDGET_LANG_CREDITS;
@@ -77,6 +77,7 @@ $modversion['templates'] = array(
 		array('file' => '{dirname}_instance_list.html','description' => _MI_WIDGET_TPL_INSTANCE_LIST),
 		array('file' => '{dirname}_instance_view.html','description' => _MI_WIDGET_TPL_INSTANCE_VIEW),
 		array('file' => '{dirname}_plugin_list.html','description' => 'Plugin List'),
+		array('file' => '{dirname}_inc_menu.html','description' => 'menu'),
 ##[/cubson:templates]
 );
 
