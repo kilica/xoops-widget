@@ -55,6 +55,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-11-09 [0.30]
+* Bootstrap template
+
 2012-10-05 0.26
 * Add Counter Plugin
 * Add RSS Plugin
