@@ -2,7 +2,7 @@
 <{if count($block->mFeed) > 0}>
 <h3><a href="<{$block->mFeed->get_permalink()}>"><{$block->mFeed->get_title()}></a></h3>
 <ul>
-    <{foreach item=item from=$block->mFeed->get_items()}>
+    <{foreach item=item from=$block->mFeed->get_items(0, $block->mLimit)}>
     <li><{$item->get_date()|strtotime|xoops_formattimestamp:"s"}> <a href="<{$item->get_permalink()}>"><{$item->get_title()}></a></li>
     <{/foreach}>
 </ul>

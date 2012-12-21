@@ -55,6 +55,10 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-12-21 [0.31]
+* RSS Plugin update
+* Fix bug: getImageNumber function adopting for under PHP 5.3
+
 2012-11-09 [0.30]
 * Bootstrap template
 

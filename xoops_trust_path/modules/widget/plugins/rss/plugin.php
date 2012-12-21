@@ -35,6 +35,7 @@ class Widget_Rss_Plugin implements Widget_PluginInterface
 		$feed->init();
 		$feed->handle_content_type();
 		$object->mFeed = $feed;
+		$object->mLimit = $object->getOptionValue('p_number');
 	}
 
 	public static function prepareEditform(Widget_InstanceObject $object)
