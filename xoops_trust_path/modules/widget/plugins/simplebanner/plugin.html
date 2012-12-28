@@ -1,0 +1,8 @@
+<{if ($block->getOptionValue('p_start')<$smarty.now && $block->getOptionValue('p_end')>$smarty.now) || ! $block->getOptionValue('p_term')}>
+<div class="simple-banner">
+  <a href="<{$block->getOptionValue('p_link')}>"><{legacy_image dirname=$block->getDirname() dataname="instance" data_id=$block->get('instance_id') num=1 tsize=0}></a>
+  <{if $block->getOptionValue('p_description')}>
+  <div class="description"><{$block->getOptionValue('p_description')}></div>
+  <{/if}>
+</div>
+<{/if}>

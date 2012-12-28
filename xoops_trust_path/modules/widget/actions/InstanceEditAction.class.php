@@ -70,6 +70,9 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 		$render->setAttribute('dirname', $this->mAsset->mDirname);
 		$render->setAttribute('dataname', self::DATANAME);
 		$render->setAttribute('optionFormPath', WIDGET_TRUST_PATH.'/plugins/'.$this->mObject->get('type').'/option_form.html');
+
+        $this->mObject->setupImages($isPost=false);
+        $render->setAttribute('imageObjs', $this->mObject->mImage);
 	}
 
 	public function _doExecute()

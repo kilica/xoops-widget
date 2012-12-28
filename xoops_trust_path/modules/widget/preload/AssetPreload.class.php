@@ -74,7 +74,11 @@ class Widget_AssetPreloadBase extends XCube_ActionFilter
         $this->mRoot->mDelegateManager->add('Legacy_Utils.CreateModule','Widget_AssetPreloadBase::getModule');
         $this->mRoot->mDelegateManager->add('Legacy_Utils.CreateBlockProcedure','Widget_AssetPreloadBase::getBlock');
         $this->mRoot->mDelegateManager->add('Module.'.$this->mDirname.'.Global.Event.GetNormalUri','Widget_CoolUriDelegate::getNormalUri', $file);
-	}
+
+        // client delegates
+        $cfile = WIDGET_TRUST_PATH . '/class/callback/ClientDelegateFunctions.class.php';
+        $this->mRoot->mDelegateManager->add('Legacy_ImageClient.GetClientList','Widget_ImageClientDelegate::getClientList', $cfile);
+    }
 
     /**
      * getInstance
