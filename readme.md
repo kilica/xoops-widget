@@ -26,6 +26,7 @@ Included Plugins
 * Smarty
 * RSS
 * Counter
+* Simplebanner
 
 Terms of this module
 --------------------
@@ -55,6 +56,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2012-12-28 [0.32]
+* Simple Banner plugin added.
+
 2012-12-21 [0.31]
 * RSS Plugin update
 * Fix bug: getImageNumber function adopting for under PHP 5.3
