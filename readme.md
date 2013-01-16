@@ -56,6 +56,11 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2013-01-16 [0.33]
+* Fix Bugs: config.ini array with index number was invalid format.
+* Fix Bugs: Block template update when module updated.
+* Add edit button at View
+
 2012-12-28 [0.32]
 * Simple Banner plugin added.
 

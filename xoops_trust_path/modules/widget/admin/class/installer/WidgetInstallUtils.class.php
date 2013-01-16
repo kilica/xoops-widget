@@ -527,6 +527,29 @@ class Widget_InstallUtils
         }
     
         $info =& $module->getInfo('blocks');
+        if($block->get('options')){
+            $instanceId = array_shift(explode('|', $block->get('options')));
+            $handler = Legacy_Utils::getModuleHandler('instance', $module->get('dirname'));
+            $instance = $handler->get($instanceId);
+            if(Widget_Utils::installBlock($instance)){
+                $log->addReport(
+                    XCube_Utils::formatString(
+                        _MI_WIDGET_INSTALL_MSG_BLOCK_TPL_INSTALLED,
+                        $instance->getTemplateName()
+                    )
+                );
+                return true;
+            }
+
+            $log->addError(
+                XCube_Utils::formatString(
+                    _MI_WIDGET_INSTALL_ERROR_BLOCK_TPL_INSTALLED,
+                    $instance->getTemplateName()
+                )
+            );
+            return false;
+        }
+
         $filename = Widget_InstallUtils::replaceDirname(
             $info[$block->get('func_num')]['template'],
             $module->get('dirname'),
