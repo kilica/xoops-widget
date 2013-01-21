@@ -16,20 +16,20 @@
 </div>
 <div class="control-group">
     <label for="p_start_day" class="control-label required"><{$object->getOptionTitle('p_start_day')}></label>
-    <div class="controls" class="span4 datePicker"><{xoops_input type="text" name="p_start_day" value=$object->getOptionValue('p_start_day')}></div>
+    <div class="controls" class="span4"><{xoops_input class="datePicker" type="text" name="p_start_day" value='Y-m-d'|date:$object->getOptionValue('p_start')}></div>
 </div>
 <div class="control-group">
     <label for="p_start_time" class="control-label required"><{$object->getOptionTitle('p_start_time')}></label>
-    <div class="controls" class="span4"><{xoops_input type="text" name="p_start_time" value=$object->getOptionValue('p_start_time') maxlength="4"}></div>
+    <div class="controls" class="span4"><{xoops_input type="text" name="p_start_time" value='hi'|date:$object->getOptionValue('p_start') maxlength="4"}></div>
 </div>
 
 <div class="control-group">
     <label for="p_end_day" class="control-label required"><{$object->getOptionTitle('p_end_day')}></label>
-    <div class="controls" class="span4 datePicker"><{xoops_input type="text" name="p_end_day" value=$object->getOptionValue('p_end_day')}></div>
+    <div class="controls" class="span4"><{xoops_input class="datePicker" type="text" name="p_end_day" value='Y-m-d'|date:$object->getOptionValue('p_end')}></div>
 </div>
 <div class="control-group">
     <label for="p_end_time" class="control-label required"><{$object->getOptionTitle('p_end_time')}></label>
-    <div class="controls" class="span4"><{xoops_input type="text" name="p_end_time" value=$object->getOptionValue('p_end_time') maxlength="4"}></div>
+    <div class="controls" class="span4"><{xoops_input type="text" name="p_end_time" value='hi'|date:$object->getOptionValue('p_end') maxlength="4"}></div>
 </div>
 
 <div class="control-group">

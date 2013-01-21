@@ -22,7 +22,7 @@ interface Widget_PluginInterface
 	 * @param Widget_InstanceObject $object
 	 * @return void
 	 */
-	public static function prepareEditform(Widget_InstanceObject $object);
+	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object);
 
 	/**
 	 * @static

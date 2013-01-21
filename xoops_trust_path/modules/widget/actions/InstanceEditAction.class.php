@@ -61,7 +61,7 @@ class Widget_InstanceEditAction extends Widget_AbstractEditAction
 		$pluginFile = WIDGET_TRUST_PATH.'/plugins/'.$this->mObject->getShow('type').'/plugin.php';
 		if(file_exists($pluginFile) && $this->mObject instanceof Widget_InstanceObject){
 			require_once $pluginFile;
-			call_user_func(array('Widget_'.ucfirst($this->mObject->getShow('type')).'_Plugin', 'prepareEditform'), $this->mObject);
+			call_user_func(array('Widget_'.ucfirst($this->mObject->getShow('type')).'_Plugin', 'prepareEditform'), $this->mActionForm, $this->mObject);
 		}
 
 		$render->setTemplateName($this->mAsset->mDirname . '_instance_edit.html');

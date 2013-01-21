@@ -13,7 +13,7 @@ class Widget_Menu_Plugin implements Widget_PluginInterface
 	{
 	}
 
-	public static function prepareEditform(Widget_InstanceObject $object)
+	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object)
 	{
 	}
 

@@ -35,7 +35,7 @@ class Widget_Amazon_Plugin implements Widget_PluginInterface
 		//var_dump($ret);die;
 	}
 
-	public static function prepareEditform(Widget_InstanceObject $object)
+	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object)
 	{
 	}
 

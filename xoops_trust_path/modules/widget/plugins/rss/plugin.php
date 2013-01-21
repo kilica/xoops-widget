@@ -38,7 +38,7 @@ class Widget_Rss_Plugin implements Widget_PluginInterface
 		$object->mLimit = $object->getOptionValue('p_number');
 	}
 
-	public static function prepareEditform(Widget_InstanceObject $object)
+	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object)
 	{
 	}
 

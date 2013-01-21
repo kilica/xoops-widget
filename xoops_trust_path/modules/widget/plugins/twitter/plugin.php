@@ -15,7 +15,7 @@ class Widget_Twitter_Plugin implements Widget_PluginInterface
 		$headerScript->addLibrary("http://widgets.twimg.com/j/2/widget.js", false);
 	}
 
-	public static function prepareEditform(Widget_InstanceObject $object)
+	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object)
 	{
 		$headerScript = XCube_Root::getSingleton()->mContext->getAttribute('headerScript');
 		$wtype = $object->getOptionValue('p_type') ? $object->getOptionValue('p_type') : 'profile';

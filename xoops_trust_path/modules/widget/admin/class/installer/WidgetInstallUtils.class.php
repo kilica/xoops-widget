@@ -531,7 +531,7 @@ class Widget_InstallUtils
             $instanceId = array_shift(explode('|', $block->get('options')));
             $handler = Legacy_Utils::getModuleHandler('instance', $module->get('dirname'));
             $instance = $handler->get($instanceId);
-            if(Widget_Utils::installBlock($instance)){
+            if(Widget_Utils::installWidgetTemplate($instance)){
                 $log->addReport(
                     XCube_Utils::formatString(
                         _MI_WIDGET_INSTALL_MSG_BLOCK_TPL_INSTALLED,
