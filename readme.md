@@ -56,6 +56,12 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2013-01-21 [0.35]
+* $form is added as prepareEditform() first argument
+
+2013-01-16 [0.34]
+* Fix Bug : move html class of "datePicker"
+
 2013-01-16 [0.33]
 * Fix Bugs: config.ini array with index number was invalid format.
 * Fix Bugs: Block template update when module updated.
