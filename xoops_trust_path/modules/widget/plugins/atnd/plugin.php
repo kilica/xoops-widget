@@ -9,7 +9,7 @@
 
 class Widget_Atnd_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 		$res = self::_getEventResponse($object->getOptionValue('p_owner_id'), $object->getOptionValue('p_number'));
 		if($res!==false){

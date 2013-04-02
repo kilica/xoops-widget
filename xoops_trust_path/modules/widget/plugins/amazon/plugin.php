@@ -9,7 +9,7 @@
 
 class Widget_Amazon_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 		$root = XCube_Root::getSingleton();
 		$AWSAccessKeyId = $root->getSiteConfig('amazon', 'AWSAccessKeyId');

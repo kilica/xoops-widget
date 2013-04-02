@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class Widget_Html_Plugin implements Widget_PluginInterface
+class Widget_Slide_Plugin implements Widget_PluginInterface
 {
 	public static function execute(Widget_InstanceObject &$object)
 	{
@@ -25,6 +25,6 @@ class Widget_Html_Plugin implements Widget_PluginInterface
 
 	public static function getImageNumber(Widget_InstanceObject $obj)
 	{
-		return 0;
+		return $obj->getOptionValue('p_number');
 	}
 }

@@ -9,7 +9,7 @@
 
 class Widget_Rss_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 		include_once XOOPS_LIBRARY_PATH.'/simplepie/autoloader.php';
 		$feed = new SimplePie();

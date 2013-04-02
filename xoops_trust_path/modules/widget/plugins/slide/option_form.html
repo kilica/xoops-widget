@@ -1,0 +1,32 @@
+<div class="control-group">
+    <div id="legacy_image_group">
+    <{foreach item=imageKey from=$imageNameList key=n}>
+    <div class="control-group" id="legacy_image_group_<{$n}>">
+        <label class="control-label" for="legacy_image_delete[<{$n}>]"><{$imageNameList[$n]}></label>
+        <div class="controls">
+            <{if $imageObjs[$n] && $imageObjs[$n]->isNew()===false}>
+              <{xoops_input type="checkbox" name="legacy_image_delete[$n]" value="1"}>
+              <{$imageObjs[$n]->makeImageTag()}><br />
+            <{/if}>
+            <{xoops_input type="file" name="legacy_image[$n]" size="30"}>
+            <{xoops_input type="hidden" name="legacy_image_id[$n]" value=$imageObjs[$n]->getShow('image_id')}>
+        </div>
+    </div>
+    <{/foreach}>
+    <div class="controls">
+        <input type="button" onclick="$(this).append(
+    '<div class="control-group" id="legacy_image_group_<{$n}>">
+        <div class="controls">
+            <{if $imageObjs[$n] && $imageObjs[$n]->isNew()===false}>
+            <{xoops_input type="checkbox" name="legacy_image_delete[$n]" value="1"}>
+            <{$imageObjs[$n]->makeImageTag()}><br />
+            <{/if}>
+            <{xoops_input type="file" name="legacy_image[$n]" size="30"}>
+            <{xoops_input type="hidden" name="legacy_image_id[$n]" value=$imageObjs[$n]->getShow('image_id')}>
+        </div>
+    </div>'
+    )" />
+</div>
+
+</div>
+</div>

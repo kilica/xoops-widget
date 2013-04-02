@@ -9,7 +9,7 @@
 
 class Widget_Counter_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 		if($object->getOptionValue('p_perpage')==1){
 			self::_countupPage($object);

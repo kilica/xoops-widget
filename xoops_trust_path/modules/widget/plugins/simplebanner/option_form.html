@@ -1,34 +1,34 @@
 <div class="control-group">
-    <label for="p_title" class="control-label required"><{$object->getOptionTitle('p_title')}></label>
+    <label for="p_title" class="control-label"><{$object->getOptionTitle('p_title')}></label>
     <div class="controls" class="span4"><{xoops_input type="text" name="p_title" value=$object->getOptionValue('p_title')}></div>
 </div>
 <div class="control-group">
-    <label for="p_link" class="control-label required"><{$object->getOptionTitle('p_link')}></label>
+    <label for="p_link" class="control-label"><{$object->getOptionTitle('p_link')}></label>
     <div class="controls" class="span4"><{xoops_input type="text" name="p_link" value=$object->getOptionValue('p_link')}></div>
 </div>
 <div class="control-group">
-    <label for="p_description" class="control-label required"><{$object->getOptionTitle('p_description')}></label>
+    <label for="p_description" class="control-label"><{$object->getOptionTitle('p_description')}></label>
     <div class="controls" class="span4"><textarea name="p_description"><{$object->getOptionValue('p_description')}></textarea></div>
 </div>
 <div class="control-group">
-    <label for="p_term" class="control-label required"><{$object->getOptionTitle('p_term')}></label>
+    <label for="p_term" class="control-label"><{$object->getOptionTitle('p_term')}></label>
     <div class="controls" class="span4"><input type="checkbox" id="legacy_xoopsform_p_term" name="p_term" value="1"<{if $object->getOptionValue('p_term')==1}> checked="checked"<{/if}> /></div>
 </div>
 <div class="control-group">
-    <label for="p_start_day" class="control-label required"><{$object->getOptionTitle('p_start_day')}></label>
+    <label for="p_start_day" class="control-label"><{$object->getOptionTitle('p_start_day')}></label>
     <div class="controls" class="span4"><{xoops_input class="datePicker" type="text" name="p_start_day" value='Y-m-d'|date:$object->getOptionValue('p_start')}></div>
 </div>
 <div class="control-group">
-    <label for="p_start_time" class="control-label required"><{$object->getOptionTitle('p_start_time')}></label>
+    <label for="p_start_time" class="control-label"><{$object->getOptionTitle('p_start_time')}></label>
     <div class="controls" class="span4"><{xoops_input type="text" name="p_start_time" value='hi'|date:$object->getOptionValue('p_start') maxlength="4"}></div>
 </div>
 
 <div class="control-group">
-    <label for="p_end_day" class="control-label required"><{$object->getOptionTitle('p_end_day')}></label>
+    <label for="p_end_day" class="control-label"><{$object->getOptionTitle('p_end_day')}></label>
     <div class="controls" class="span4"><{xoops_input class="datePicker" type="text" name="p_end_day" value='Y-m-d'|date:$object->getOptionValue('p_end')}></div>
 </div>
 <div class="control-group">
-    <label for="p_end_time" class="control-label required"><{$object->getOptionTitle('p_end_time')}></label>
+    <label for="p_end_time" class="control-label"><{$object->getOptionTitle('p_end_time')}></label>
     <div class="controls" class="span4"><{xoops_input type="text" name="p_end_time" value='hi'|date:$object->getOptionValue('p_end') maxlength="4"}></div>
 </div>
 

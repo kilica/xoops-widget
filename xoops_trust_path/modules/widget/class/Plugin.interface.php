@@ -14,7 +14,7 @@ interface Widget_PluginInterface
 	 * @param Widget_InstanceObject $object
 	 * @return mixed
 	 */
-	public static function execute(Widget_InstanceObject $object);
+	public static function execute(Widget_InstanceObject &$object);
 
 	/**
 	 * @static

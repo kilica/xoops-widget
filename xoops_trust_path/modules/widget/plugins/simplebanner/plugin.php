@@ -9,13 +9,19 @@
 
 class Widget_Simplebanner_Plugin implements Widget_PluginInterface
 {
-	public static function execute(Widget_InstanceObject $object)
+	public static function execute(Widget_InstanceObject &$object)
 	{
 
 	}
 
 	public static function prepareEditform(Widget_InstanceEditForm $form, Widget_InstanceObject $object)
 	{
+        if($object->isNew()){
+            $object->setOptionValue('p_start', mktime(0,0,0,date('m'), date('d'), date('Y')));
+            $object->setOptionValue('p_end', mktime(0,0,0,date('m'), date('d'), date('Y')));
+            $form->set('p_start', mktime(0,0,0,date('m'), date('d'), date('Y')));
+            $form->set('p_start', mktime(0,0,0,date('m'), date('d'), date('Y')));
+        }
 	}
 
 	public static function fetch(Widget_InstanceObject $object, $request)
