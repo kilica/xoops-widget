@@ -56,6 +56,17 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2013-04-04 [0.38]
+* Add Mini Calendar Plugin
+
+2013-04-04 [0.37]
+* Fix Bug about update module
+
+2013-04-02 [0.36]
+* Fix Bugs about plugin interface
+* Use call_user_func_array() instead of call_user_func() because of reference issue.
+
+
 2013-01-21 [0.35]
 * $form is added as prepareEditform() first argument
 

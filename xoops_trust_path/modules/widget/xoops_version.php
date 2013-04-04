@@ -21,7 +21,7 @@ require_once WIDGET_TRUST_PATH . '/class/WidgetUtils.class.php';
 // Define a basic manifesto.
 //
 $modversion['name'] = $myDirName;
-$modversion['version'] = 0.37;
+$modversion['version'] = 0.38;
 $modversion['description'] = _MI_WIDGET_DESC_WIDGET;
 $modversion['author'] = _MI_WIDGET_LANG_AUTHOR;
 $modversion['credits'] = _MI_WIDGET_LANG_CREDITS;
