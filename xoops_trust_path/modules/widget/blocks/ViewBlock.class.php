@@ -146,7 +146,7 @@ class Widget_ViewBlock extends Legacy_BlockProcedure
 		if(file_exists($pluginFile)){
 			require_once $pluginFile;
             $obj = $this->_mObject;
-			call_user_func_array(array('Widget_'.ucfirst($this->_mObject->getShow('type')).'_Plugin', 'execute'), array($obj));
+			call_user_func_array(array('Widget_'.ucfirst($this->_mObject->getShow('type')).'_Plugin', 'execute'), array(&$obj));
 		}
 		$root =& XCube_Root::getSingleton();
 	

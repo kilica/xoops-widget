@@ -303,51 +303,49 @@ class Widget_InstallUtils
         }
     }
 
-	/**
-	 * uninstallAllOfModuleTemplates
-	 *
-	 * @param   XoopsModule  &$module
-	 * @param   Legacy_ModuleInstallLog  &$log
-	 * @param   bool  $defaultOnly
-	 *
-	 * @return  void
-	 **/
-	public static function uninstallWidgetTemplates(/*** XoopsModule ***/ &$module,/*** Legacy_ModuleInstallLog ***/ &$log,/*** bool ***/ $defaultOnly = true)
-	{
-		$tplHandler   =& Widget_Utils::getXoopsHandler('tplfile');
+    /**
+     * uninstallAllOfModuleTemplates
+     *
+     * @param   XoopsModule  &$module
+     * @param   Legacy_ModuleInstallLog  &$log
+     * @param   bool  $defaultOnly
+     *
+     * @return  void
+     **/
+    public static function uninstallWidgetTemplates(/*** XoopsModule ***/ &$module,/*** Legacy_ModuleInstallLog ***/ &$log,/*** bool ***/ $defaultOnly = true)
+    {
+        $tplHandler   =& Widget_Utils::getXoopsHandler('tplfile');
 
-		$delTemplates =& $tplHandler->find($defaultOnly ? 'default' : null,'widget',$module->get('mid'));
+        $delTemplates =& $tplHandler->find($defaultOnly ? 'default' : null,'widget',$module->get('mid'));
 
-		if(is_array($delTemplates) && count($delTemplates) > 0)
-		{
-			$xoopsTpl = new XoopsTpl();
-			//$xoopsTpl->clear_cache(null,'mod_' . $module->get('dirname'));
-			foreach($delTemplates as $tpl)
-			{
-				if(!$tplHandler->delete($tpl))
-				{
-					$log->addError(
-						XCube_Utils::formatString(
-							_MI_WIDGET_INSTALL_ERROR_TPL_UNINSTALLED,
-							$tpl->get('tpl_file')
-						)
-					);
-				}
-			}
-		}
-	}
+        if(is_array($delTemplates) && count($delTemplates) > 0)
+        {
+            $xoopsTpl = new XoopsTpl();
+            //$xoopsTpl->clear_cache(null,'mod_' . $module->get('dirname'));
+            foreach($delTemplates as $tpl)
+            {
+                if(!$tplHandler->delete($tpl))
+                {
+                    $log->addError(
+                        XCube_Utils::formatString(
+                            _MI_WIDGET_INSTALL_ERROR_TPL_UNINSTALLED,
+                            $tpl->get('tpl_file')
+                        )
+                    );
+                }
+            }
+        }
+    }
 
-	public static function installWidgetTemplates(&$module, &$log, $defaultOnly = true)
-	{
-		$tplHandler   =& Widget_Utils::getXoopsHandler('tplfile');
+    public static function installWidgetTemplates(&$module, &$log, $defaultOnly = true)
+    {
+        $instances = Legacy_Utils::getModuleHandler('instance', $module->get('dirname'))->getObjects();
+        foreach($instances as $instance){
+            Widget_Utils::installWidgetTemplate($instance);
+        }
+    }
 
-		$instances = Legacy_Utils::getModuleHandler('instance', $module->get('dirname'))->getObjects();
-		foreach($instances as $instance){
-			Widget_Utils::installWidgetTemplate($instance);
-		}
-	}
-
-	/**
+    /**
      * installAllOfBlocks
      * 
      * @param   XoopsModule  &$module

@@ -215,6 +215,7 @@ class Widget_Utils
 	 */
 	public static function installWidgetTemplate(Widget_InstanceObject $instance)
 	{
+        $instance->loadOptionValues();
 		$dirname = $instance->getDirname();
 		$mid = self::_getMid($dirname);
 
