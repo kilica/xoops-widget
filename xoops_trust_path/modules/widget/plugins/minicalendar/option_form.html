@@ -1,0 +1,16 @@
+<div class="control-group">
+    <label for="p_holiday" class="control-label required"><{$object->getOptionTitle('p_holiday')}></label>
+    <div class="controls" class="span4"><textarea name="p_holiday"><{$object->getOptionValue('p_holiday')}></textarea></div>
+</div>
+<div class="control-group">
+  <label for="p_closed" class="control-label"><{$object->getOptionTitle('p_closed')}></label>
+  <div class="controls" class="span4"><textarea name="p_closed"><{$object->getOptionValue('p_closed')}></textarea></div>
+</div>
+<div class="control-group">
+    <label for="p_dirname" class="control-label"><{$object->getOptionTitle('p_dirname')}></label>
+    <div class="controls" class="span4"><{xoops_input type=text name=p_dirname value=$object->getOptionValue('p_dirname')}></div>
+</div>
+<div class="control-group">
+    <label for="p_datename" class="control-label"><{$object->getOptionTitle('p_datename')}></label>
+    <div class="controls" class="span4"><{xoops_input type=text name=p_datename value=$object->getOptionValue('p_datename')}></div>
+</div>

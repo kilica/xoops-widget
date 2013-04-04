@@ -1,0 +1,26 @@
+<div class="mini-calendar">
+<p class="month-show"><{$block->getParameter('month')}><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_MONTH_POSTFIX}></p>
+<table>
+    <thead>
+    <tr>
+        <th class="dcol_h" scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_SUN}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_MON}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_TUE}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_WED}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_THU}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_FRI}></th>
+        <th scope="col"><{$smarty.const._WIDGET_PLUGIN_MINICALENDAR_SAT}></th>
+    </tr>
+    </thead>
+    <tbody>
+    <{foreach item=week from=$block->getParameter('days')}>
+    <tr>
+        <{foreach item=day from=$week name=d}>
+        <td<{if $day.class}> class="<{$day.class}>"<{/if}>><{if $day.url}><a href="<{$day.url}>"><{/if}><{if $day.day>0}><span class="dcol_<{if $smarty.foreach.d.index==0}>h<{elseif $day.class=="holiday"}>s<{else}>n<{/if}><{if $day.url}> evday<{/if}>"><{$day.day}></span><{else}>&nbsp;<{/if}><{if $day.url}></a><{/if}></td>
+        <{/foreach}>
+    </tr>
+    <{/foreach}>
+
+    </tbody>
+</table>
+</div>
