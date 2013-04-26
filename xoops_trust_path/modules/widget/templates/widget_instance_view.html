@@ -1,8 +1,12 @@
 <div class="widget">
 <{include file="db:`$dirname`_inc_menu.html"}>
 
-<h1>[ID: <{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)</h1>
-<a href="<{xoops_cooluri dirname=$dirname dataname=instance data_id=$object->get('instance_id') action=edit}>"><button class="btn"><{$smarty.const._EDIT}></button></a>
+<div class="page-header">
+  <h1>[ID: <{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)
+    <a class="btn" href="<{xoops_cooluri dirname=$dirname dataname=instance data_id=$object->get('instance_id') action=edit}>"><{$smarty.const._EDIT}></a>
+    <a class="btn" href="<{xoops_cooluri dirname=$dirname dataname=block data_id=$object->getShow('instance_id') action=edit}>"><{$smarty.const._MD_WIDGET_LANG_BLOCK}></a>
+  </h1>
+</div>
 <h2><{$smarty.const._PREVIEW}></h2>
 <div>
 <{xoops_widget dirname=$dirname widget_id=$object->get('instance_id')}>

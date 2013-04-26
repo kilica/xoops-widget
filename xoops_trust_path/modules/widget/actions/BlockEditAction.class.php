@@ -33,7 +33,7 @@ class Widget_BlockEditAction extends Widget_AbstractEditAction
 
     function &_getHandler()
     {
-        $handler =& xoops_gethandler('newblocks', 'legacy');
+        $handler =& xoops_getmodulehandler('newblocks', 'legacy');
         return $handler;
     }
 
