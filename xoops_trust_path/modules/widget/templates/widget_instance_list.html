@@ -34,6 +34,7 @@
           <td>
             <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=edit}>"><{$smarty.const._EDIT}></a>
             <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('instance_id') action=delete}>"><{$smarty.const._DELETE}></a>
+              <a href="<{xoops_cooluri dirname=$dirname dataname=block data_id=$obj->getShow('instance_id') action=edit}>"><{$smarty.const._MD_WIDGET_LANG_BLOCK}></a>
           </td>
         </tr>
       <{/foreach}>

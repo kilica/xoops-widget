@@ -32,6 +32,8 @@ define('_MD_WIDGET_LANG_ADD_A_NEW_INSTANCE', 'Add a new Instance');
 define('_MD_WIDGET_LANG_INSTANCE_EDIT', 'Instance Edit');
 define('_MD_WIDGET_LANG_INSTANCE_DELETE', 'Instance Delete');
 define('_MD_WIDGET_LANG_INSTANCE', 'Instance');
-
+define('_MD_WIDGET_LANG_PLUGIN', 'Plugin');
+define('_MD_WIDGET_LANG_DESCRIPTION', 'Description');
+define('_MD_WIDGET_LANG_BLOCK', 'Block');
 
 ?>

@@ -27,6 +27,7 @@ Included Plugins
 * RSS
 * Counter
 * Simplebanner
+* Mini Calendar
 
 Terms of this module
 --------------------
@@ -56,6 +57,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2013-04-26 [0.40]
+* Add Block Install
+
 2013-04-04 [0.38]
 * Add Mini Calendar Plugin
 

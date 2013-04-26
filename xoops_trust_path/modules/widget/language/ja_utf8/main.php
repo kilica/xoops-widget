@@ -35,6 +35,7 @@ define('_MD_WIDGET_LANG_INSTANCE_DELETE', 'ウィジットの削除');
 define('_MD_WIDGET_LANG_INSTANCE', 'Instance');
 define('_MD_WIDGET_LANG_PLUGIN', 'プラグイン');
 define('_MD_WIDGET_LANG_DESCRIPTION', '説明');
+define('_MD_WIDGET_LANG_BLOCK', 'ブロック');
 
 
 ?>
