@@ -168,7 +168,7 @@ class Widget_InstanceHandler extends Legacy_AbstractClientObjectHandler
         parent::XoopsObjectGenericHandler($db);
     }
 
-    public function insert(Widget_InstanceObject $obj, $force=false)
+    public function insert(&$obj, $force=false)
     {
         $obj->set('options', serialize($obj->mOptions));
         return parent::insert($obj, $force);

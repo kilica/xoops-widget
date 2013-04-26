@@ -42,7 +42,7 @@ class Widget_AssetManager
      * 
      * @return  Widget_AssetManager
     **/
-    public function &getInstance(/*** string ***/ $dirname)
+    public static function &getInstance(/*** string ***/ $dirname)
     {
         /**
          *  @var    Widget_AssetManager[]
