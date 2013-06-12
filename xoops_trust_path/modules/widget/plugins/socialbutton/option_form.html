@@ -1,0 +1,13 @@
+<div class="control-group">
+    <label for="p_services" class="control-label required"><{$object->getOptionTitle('p_services')}></label>
+    <div class="controls"><{xoops_input type=text name=p_services value=$object->getOptionValue('p_services') class="span6"}><br><span class="help-block"><{$object->getOptionTitle('p_services_desc')}></span></div>
+</div>
+<div class="control-group">
+    <label for="p_form" class="control-label required"><{$object->getOptionTitle('p_form')}></label>
+    <div class="controls">
+        <select name="p_form" id="p_form">
+            <option value="horizontal"<{if $object->getOptionValue('p_form')=='horizontal'}> selected="selected"<{/if}>>horizontal</option>
+            <option value="vertical"<{if $object->getOptionValue('p_form')=='vertical'}> selected="selected"<{/if}>>vertical</option>
+        </select>
+    </div>
+</div>

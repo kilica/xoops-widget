@@ -47,7 +47,22 @@ class Widget_InstanceViewAction extends Widget_AbstractViewAction
 		$render->setAttribute('object', $this->mObject);
 		$render->setAttribute('dirname', $this->mAsset->mDirname);
 		$render->setAttribute('dataname', self::DATANAME);
+        $render->setAttribute('blockList', $this->_getBlocks());
 	}
+
+    protected function _getBlocks()
+    {
+        $ret = array();
+        $handler = xoops_gethandler('block');
+        $blocks = $handler->getByModule($this->mModule->mXoopsModule->get('mid'));
+        foreach($blocks as $block){
+            $instanceId = array_shift(explode('|', $block->get('options')));
+            if($instanceId == $this->mObject->get('instance_id')){
+                $ret[] = $block;
+            }
+        }
+        return $ret;
+    }
 }
 
 ?>

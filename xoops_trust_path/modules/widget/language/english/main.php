@@ -34,6 +34,13 @@ define('_MD_WIDGET_LANG_INSTANCE_DELETE', 'Instance Delete');
 define('_MD_WIDGET_LANG_INSTANCE', 'Instance');
 define('_MD_WIDGET_LANG_PLUGIN', 'Plugin');
 define('_MD_WIDGET_LANG_DESCRIPTION', 'Description');
+/* block */
 define('_MD_WIDGET_LANG_BLOCK', 'Block');
-
+define('_MD_WIDGET_LANG_UNINSTALL_BLOCK', 'Uninstall Block');
+define('_MD_WIDGET_LANG_BLOCKLIST', 'Block List');
+define('_MD_WIDGET_LANG_BID', 'Block ID');
+define('_MD_WIDGET_LANG_BLOCK_TITLE', 'Block Title');
+define('_MD_WIDGET_LANG_VISIBLE', 'Show Block ?');
+define('_MD_WIDGET_LANG_IS_ACTIVE_BLOCK', 'Is Active?');
+define('_MD_WIDGET_LANG_BLOCK_SIDE', 'Display Side');
 ?>

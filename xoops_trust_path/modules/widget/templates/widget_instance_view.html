@@ -4,13 +4,15 @@
 <div class="page-header">
   <h1>[ID: <{$object->getShow('instance_id')}>] <{$object->getShow('title')}> (<{$object->getShow('type')}>)
     <a class="btn" href="<{xoops_cooluri dirname=$dirname dataname=instance data_id=$object->get('instance_id') action=edit}>"><{$smarty.const._EDIT}></a>
-    <a class="btn" href="<{xoops_cooluri dirname=$dirname dataname=block data_id=$object->getShow('instance_id') action=edit}>"><{$smarty.const._MD_WIDGET_LANG_BLOCK}></a>
+    <a class="btn" href="<{xoops_cooluri dirname=$dirname dataname=block data_id=$object->getShow('instance_id') action=edit}>"><{$smarty.const._MD_WIDGET_LANG_BLOCK}><{$smarty.const._ADD}></a>
   </h1>
 </div>
+
 <h2><{$smarty.const._PREVIEW}></h2>
 <div>
 <{xoops_widget dirname=$dirname widget_id=$object->get('instance_id')}>
 </div>
+
 <h2><{$smarty.const._MD_WIDGET_LANG_OPTIONS}></h2>
 <dl class="dl-horizontal">
 <{foreach item=field from=$object->mPlugin.options.field}>
@@ -18,4 +20,31 @@
     <dd><{$object->getOptionValue($field)}></dd>
 <{/foreach}>
 </dl>
+
+<h2><{$smarty.const._MD_WIDGET_LANG_BLOCKLIST}></h2>
+<table class="table">
+    <tbody>
+    <tr>
+        <th><{$smarty.const._MD_WIDGET_LANG_BID}></th>
+        <th><{$smarty.const._MD_WIDGET_LANG_BLOCK_TITLE}></th>
+        <th><{$smarty.const._MD_WIDGET_LANG_VISIBLE}></th>
+        <th><{$smarty.const._MD_WIDGET_LANG_IS_ACTIVE_BLOCK}></th>
+        <th><{$smarty.const._MD_WIDGET_LANG_BLOCK_SIDE}></th>
+    </tr>
+    <{foreach item=wblock from=$blockList}>
+    <{assign var=bid value=$wblock->get('bid')}>
+    <tr>
+        <td><{$wblock->get('bid')}></td>
+        <td><{$wblock->get('title')}>
+            <a class="btn btn-small" href="<{xoops_cooluri dirname=$dirname dataname=block action=edit query="bid=$bid"}>"><{$smarty.const._EDIT}></a>
+            <a class="btn btn-small" href="<{xoops_cooluri dirname=$dirname dataname=block query="bid=$bid" action="uninstall"}>"><{$smarty.const._MD_WIDGET_LANG_UNINSTALL_BLOCK}></a>
+        </td>
+        <td><{if $wblock->get('visible')==1}><{$smarty.const._YES}><{else}><{$smarty.const._NO}><{/if}></td>
+        <td><{if $wblock->get('isactive')==1}><{$smarty.const._YES}><{else}><{$smarty.const._NO}><{/if}></td>
+        <td><{$wblock->get('side')}></td>
+    </tr>
+    <{/foreach}>
+    </tbody>
+</table>
+
 </div>

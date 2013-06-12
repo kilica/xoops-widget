@@ -1,0 +1,6 @@
+<{assign var=services value=$block->getOptionValue('p_services')}>
+<div id="socialbuttons" class="clearfix">
+<{foreach item=service from=','|explode:$services}>
+    <div class="pull-left <{$service|trim}>"></div>
+<{/foreach}>
+</ul>

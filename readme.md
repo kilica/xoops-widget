@@ -57,6 +57,9 @@ In this case, "p_username" option is replaced by "kilica".
 
 History
 -------
+2013-06-11 [0.41]
+* Add Socialbutton Plugin
+
 2013-04-26 [0.40]
 * Add Block Install
 
