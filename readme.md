@@ -28,6 +28,7 @@ Included Plugins
 * Counter
 * Simplebanner
 * Mini Calendar
+* Social Buttons
 
 Terms of this module
 --------------------
