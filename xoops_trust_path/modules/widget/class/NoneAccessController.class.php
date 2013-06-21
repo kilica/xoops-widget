@@ -28,7 +28,7 @@ class Widget_NoneAccessController extends Widget_AbstractAccessController
 	 * 
 	 * @return	void
 		**/
-	public function __construct(/*** string ***/ $categoryDir, /*** string ***/ $dirname, /*** string ***/ $dataname)
+	public function __construct(/*** string ***/ $categoryDir, /*** string ***/ $dirname, /*** string ***/ $dataname=null)
 	{
 		$this->_mDirname = $dirname;
 	}
